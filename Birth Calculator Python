@@ -1,0 +1,15 @@
+# Check ur life days,Age
+Present_Year = int(input("Your Present year: "))
+year = int(input("Enter Your Birth year: "))
+Age = Present_Year - year
+print("You are ", Age)
+month = int(input("Enter your Birth Month: "))
+day = int(input("Enter your birth day"))
+import datetime
+
+today = datetime.date.today()
+birthday = datetime.date(year, month, day)
+diff = birthday - today
+a = diff.days
+b = -a
+print("Today is your", b, "th day")
